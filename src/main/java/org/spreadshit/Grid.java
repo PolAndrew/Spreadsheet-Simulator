@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class Grid {
 
-	
+	int a;
 	private HashMap<Integer, ArrayList<Cell>> table=new HashMap<>();
 	
 	
