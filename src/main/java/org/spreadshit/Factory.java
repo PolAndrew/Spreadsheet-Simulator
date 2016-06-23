@@ -3,7 +3,7 @@ package org.spreadshit;
 
 import java.util.Scanner;
 
-public class CellFactory {
+public class Factory {
 		
 	Scanner sc=new Scanner(System.in);
 
