@@ -1,13 +1,16 @@
 package org.spreadshit;
 
 
-import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class Factory {
-		
-	Scanner sc=new Scanner(System.in);
+	Pattern pattern = Pattern.compile("\t");
+	Pattern expressPat=Pattern.compile("^=");
+	Pattern labelPat=Pattern.compile("^'");
+	Pattern numberPat=Pattern.compile("\\d");
+	String[] dataFromScan=pattern.split(Scan.scStr());
 
-
+	
 	
 	
 
