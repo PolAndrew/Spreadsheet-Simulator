@@ -1,7 +1,7 @@
 package org.spreadshit;
 
-public class ErrorCell extends Cell{
-	
+public class ErrorCell extends Cell {
+
 	private String data;
 
 	public ErrorCell(String data) {
@@ -16,5 +16,5 @@ public class ErrorCell extends Cell{
 	public void setData(String data) {
 		this.data = data;
 	}
-	
+
 }

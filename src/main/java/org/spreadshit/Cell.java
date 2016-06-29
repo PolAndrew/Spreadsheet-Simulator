@@ -5,36 +5,32 @@ import java.util.ArrayList;
 public abstract class Cell {
 	private int row;
 	private String col;
-	
-	private ArrayList<Cell> cellsrow=new ArrayList<>();
-	
-	
-	
-		
+
+	private ArrayList<Cell> cellsrow = new ArrayList<>();
 
 	public int getRow() {
 		return row;
 	}
+
 	public void setRow(int row) {
 		this.row = row;
 	}
+
 	public String getCol() {
 		return col;
 	}
+
 	public void setCol(String col) {
 		this.col = col;
 	}
-
 
 	public ArrayList<Cell> getCellsrow() {
 		return cellsrow;
 	}
 
-
 	public void setCellsrow(ArrayList<Cell> cellsrow) {
 		this.cellsrow = cellsrow;
 	}
-
 
 	@Override
 	public int hashCode() {
@@ -44,7 +40,6 @@ public abstract class Cell {
 		result = prime * result + row;
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -64,9 +59,5 @@ public abstract class Cell {
 			return false;
 		return true;
 	}
-	
 
-	
-	
-	
 }

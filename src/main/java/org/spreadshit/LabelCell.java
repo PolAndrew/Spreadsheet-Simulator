@@ -3,11 +3,9 @@ package org.spreadshit;
 public class LabelCell extends Cell {
 
 	private String data;
-	
-		
-	
+
 	public LabelCell(String data) {
-		
+
 		this.data = data;
 	}
 
@@ -19,6 +17,4 @@ public class LabelCell extends Cell {
 		this.data = data;
 	}
 
-	
-	
 }

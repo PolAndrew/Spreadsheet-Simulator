@@ -4,12 +4,11 @@ public class ExpressionCell extends Cell {
 
 	private String data;
 
-	
-
 	public ExpressionCell(String data) {
-		
+
 		this.data = data;
 	}
+
 	public String getData() {
 		return data;
 	}
@@ -17,7 +16,5 @@ public class ExpressionCell extends Cell {
 	public void setData(String data) {
 		this.data = data;
 	}
-	
-	
 
 }
