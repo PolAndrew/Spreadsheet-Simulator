@@ -6,9 +6,10 @@ public class NumberCell extends Cell{
 	private int data;
 
 	
-	public NumberCell(int row, String col, int data) {
-		super(row, col);
-		this.data = data;
+	
+
+	public NumberCell(Integer i) {
+		
 	}
 
 

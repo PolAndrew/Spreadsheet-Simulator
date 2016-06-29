@@ -4,11 +4,12 @@ public class ExpressionCell extends Cell {
 
 	private String data;
 
-	public ExpressionCell(int row, String col, String data) {
-		super(row, col);
+	
+
+	public ExpressionCell(String data) {
+		
 		this.data = data;
 	}
-
 	public String getData() {
 		return data;
 	}

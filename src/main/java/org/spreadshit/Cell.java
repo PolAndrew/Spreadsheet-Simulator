@@ -9,12 +9,7 @@ public abstract class Cell {
 	private ArrayList<Cell> cellsrow=new ArrayList<>();
 	
 	
-	public Cell(int row, String col) {
-		
-		this.row = row;
-		this.col = col;
-		
-	}
+	
 		
 
 	public int getRow() {
