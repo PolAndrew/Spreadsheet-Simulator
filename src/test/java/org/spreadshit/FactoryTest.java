@@ -13,5 +13,6 @@ public class FactoryTest {
 		assertTrue("float number created", factory.createCell("123.25") instanceof NumberCell);
 		assertTrue("expression cell created", factory.createCell("=A1+5+B1") instanceof ExpressionCell);
 		assertTrue("error cell created", factory.createCell("124BB") instanceof ErrorCell);
+		assertTrue("error cell created", factory.createCell("=A1--B2w") instanceof ErrorCell);
 	}
 }

@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class Factory {
 	Pattern pattern = Pattern.compile("\t");
-	Pattern expressPat = Pattern.compile("^=");
+	Pattern expressPat = Pattern.compile("^=([a-zA-Z][1-9]|[0-9]+)([+*/-]([a-zA-Z][0-9]|[0-9]+))*$");
 	Pattern labelPat = Pattern.compile("^'");
 	Pattern numberPat = Pattern.compile("\\d");
 	String[] dataFromScan = pattern.split(Scan.scStr());
