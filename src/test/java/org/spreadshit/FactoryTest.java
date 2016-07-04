@@ -18,14 +18,14 @@ public class FactoryTest {
 		assertTrue("error cell created", factory.createCell("124BB") instanceof ErrorCell);
 		assertTrue("error cell created", factory.createCell("=A1--B2w") instanceof ErrorCell);
 	}
-	
+	@Test
 	public void testcreatGrid(){
 		Factory factory=new Factory();
-		List<String> cells = new ArrayList();
+		List<String> cells = new ArrayList<String>();
 		cells.add("'ABC\t22\t35");
 		cells.add("12\t333\t800");
 		Grid grid = factory.createGrid(cells);
-		assertTrue("Expect cells created ok", grid.getCellAt(2, B) instanceof NumberCell);
+		assertTrue("Expect cells created ok", grid.getCellAt(2, "B") instanceof NumberCell);
 		
 		
 		

@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class Grid {
 
-	int a;
+
 	private HashMap<Integer, ArrayList<Cell>> table = new HashMap<>();
 
 	public HashMap<Integer, ArrayList<Cell>> getTable() {
@@ -24,6 +24,11 @@ public class Grid {
 	@Override
 	public String toString() {
 		return "Grid [table=" + table + "]";
+	}
+
+	public NumberCell getCellAt(int i, String string) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

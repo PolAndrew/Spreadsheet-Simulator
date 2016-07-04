@@ -1,13 +1,14 @@
 package org.spreadshit;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Pattern;
 
 public class Factory {
-	Pattern pattern = Pattern.compile("\t");
-	Pattern expressPat = Pattern.compile("^=([a-zA-Z][1-9]|[0-9]+)([+*/-]([a-zA-Z][0-9]|[0-9]+))*$");
-	Pattern labelPat = Pattern.compile("^'");
-	Pattern numberPat = Pattern.compile("\\d");
+	private static final Pattern pattern = Pattern.compile("\t");
+	private static final Pattern expressPat = Pattern.compile("^=([a-zA-Z][1-9]|[0-9]+)([+*/-]([a-zA-Z][0-9]|[0-9]+))*$");
+	private static final Pattern labelPat = Pattern.compile("^'");
+	private static final Pattern numberPat = Pattern.compile("\\d");
 	String[] dataFromScan = pattern.split(Scan.scStr());
 
 	public Cell createCell(String s) {
@@ -34,6 +35,11 @@ public class Factory {
 
 		return cellData;
 
+	}
+
+	public Grid createGrid(List<String> cells) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
