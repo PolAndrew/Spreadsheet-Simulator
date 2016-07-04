@@ -1,29 +1,12 @@
 package org.spreadshit;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Grid {
 
+	private ArrayList<ArrayList<Cell>> table = new ArrayList<>();
 
-	private HashMap<Integer, ArrayList<Cell>> table = new HashMap<>();
-
-	public HashMap<Integer, ArrayList<Cell>> getTable() {
-		return table;
-	}
-
-	public void setTable(HashMap<Integer, ArrayList<Cell>> table) {
-		this.table = table;
-	}
-
-	public Grid(HashMap<Integer, ArrayList<Cell>> table) {
-		super();
-		this.table = table;
-	}
-
-	@Override
-	public String toString() {
-		return "Grid [table=" + table + "]";
+	public Grid() {
 	}
 
 	public NumberCell getCellAt(int i, String string) {
@@ -31,4 +14,16 @@ public class Grid {
 		return null;
 	}
 
+	public ArrayList<ArrayList<Cell>> getTable() {
+		return table;
+	}
+
+	public void setTable(ArrayList<ArrayList<Cell>> table) {
+		this.table = table;
+	}
+	
+	public void addToTable(ArrayList<Cell> line){
+		this.table.add(line);
+		
+	}
 }

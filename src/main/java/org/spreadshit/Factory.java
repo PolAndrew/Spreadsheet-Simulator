@@ -1,6 +1,7 @@
 package org.spreadshit;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -10,6 +11,7 @@ public class Factory {
 	private static final Pattern labelPat = Pattern.compile("^'");
 	private static final Pattern numberPat = Pattern.compile("\\d");
 	String[] dataFromScan = pattern.split(Scan.scStr());
+	List<String> line=Arrays.asList(dataFromScan);
 
 	public Cell createCell(String s) {
 		if (expressPat.matcher(s) != null) {
@@ -26,20 +28,18 @@ public class Factory {
 
 	}
 
-	public ArrayList<Cell> cellWithData(String[] dataFromScan) {
-		ArrayList<Cell> cellData = new ArrayList<>();
+	
 
-		for (String i : dataFromScan) {
-			cellData.add(createCell(i));
+	public Grid CreateGrid(List<String> line) {
+		Grid grid=new Grid();
+		ArrayList<Cell> CellLine=new ArrayList<Cell>();
+				
+		for (String cell : line) {
+			CellLine.add(createCell(cell));
 		}
-
-		return cellData;
-
-	}
-
-	public Grid createGrid(List<String> cells) {
-		// TODO Auto-generated method stub
-		return null;
+		grid.addToTable(CellLine);
+		
+		return grid;
 	}
 
 }
