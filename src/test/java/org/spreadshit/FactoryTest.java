@@ -24,7 +24,7 @@ public class FactoryTest {
 		ArrayList<String> cells = new ArrayList<String>();
 		cells.add("'ABC\t22\t35");
 		cells.add("12\t333\t800");
-		Grid grid = factory.CreateGrid(cells);
+		Grid grid = factory.createGrid(cells);
 		assertTrue("Expect cells created ok", grid.getCellAt(2, "B") instanceof NumberCell);
 		
 		
