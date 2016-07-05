@@ -30,14 +30,14 @@ public class Factory {
 
 	}
 
-	public Grid CreateGrid(List<String> line) {
+	public Grid createGrid(List<String> line) {
 
-		ArrayList<Cell> CellLine = new ArrayList<Cell>();
+		ArrayList<Cell> cellLine = new ArrayList<Cell>();
 
 		for (String cell : line) {
-			CellLine.add(createCell(cell));
+			cellLine.add(createCell(cell));
 		}
-		grid.addToTable(CellLine);
+		grid.addToTable(cellLine);
 
 		return grid;
 	}
